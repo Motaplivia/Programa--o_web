@@ -17,7 +17,6 @@ Cada pasta ou arquivo dentro deste repositório representa uma tarefa ou projeto
 ### **Conteúdo do Repositório** 🗂️
 
 - **💻 Projetos práticos** sobre **front-end** e **back-end**.
-- **📑 Exercícios** com foco em **interatividade**, **design responsivo** e **integração de APIs**.
 - **📚 Documentação** e **tutorials** relacionados às tecnologias utilizadas durante a disciplina.
 
 ### **Projetos no Repositório** 📂
