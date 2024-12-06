@@ -1,45 +1,54 @@
-# Programação_web
-# **Repositório de Atividades - Programação Web I** 📂💻
+# **Sistema de Biblioteca API** 📚
 
-Este repositório contém as atividades desenvolvidas ao longo da disciplina **Programação Web I**. O objetivo principal deste repositório é documentar e armazenar os projetos, exercícios e experimentos realizados durante a disciplina, abordando temas essenciais para o desenvolvimento de aplicações web, como **HTML**, **CSS**, **JavaScript**, **APIs**, **Frameworks**, e **banco de dados**.
+## **Descrição** 📝
 
-Cada pasta ou arquivo dentro deste repositório representa uma tarefa ou projeto específico, que visa desenvolver habilidades práticas em **desenvolvimento web** e na construção de **sistemas dinâmicos**. Os projetos variam de simples páginas estáticas a aplicações interativas e sistemas back-end, utilizando as melhores práticas e ferramentas do mercado.
+O **Sistema de Biblioteca API** é uma aplicação web desenvolvida com **FastAPI** para gerenciar livros, categorias e empréstimos em uma biblioteca. A API oferece operações para realizar o cadastro, atualização, exclusão e consulta de livros, categorias e empréstimos, além de permitir consultar quais livros estão disponíveis em determinada categoria.
 
----
+### **Problema que resolve** 💡
 
-### **Objetivos do Repositório** 🎯
-
-- **📚 Documentar** e **📝 compartilhar** o aprendizado e as atividades desenvolvidas durante o curso de **Programação Web I**.
-- **💡 Desenvolver habilidades práticas** na criação de sites, sistemas e APIs, com foco em frameworks modernos e boas práticas de programação.
-- **📈 Facilitar o acompanhamento** do progresso e aprimoramento contínuo ao longo do semestre.
+Este sistema foi desenvolvido para resolver o problema de gerenciamento de livros e empréstimos em bibliotecas. Ele permite que bibliotecas mantenham o controle sobre os livros disponíveis, as categorias de livros e os empréstimos realizados pelos alunos. O sistema facilita a consulta e atualização de dados, além de garantir que os livros não sejam emprestados mais de uma vez simultaneamente.
 
 ---
 
-### **Conteúdo do Repositório** 🗂️
+## **Funcionalidades** ⚙️
 
-- **💻 Projetos práticos** sobre **front-end** e **back-end**.
-- **📑 Exercícios** com foco em **interatividade**, **design responsivo** e **integração de APIs**.
-- **📚 Documentação** e **tutorials** relacionados às tecnologias utilizadas durante a disciplina.
+- **📖 Gerenciamento de Livros**:
+  - Cadastro de livros com título, autor, ISBN e categoria.
+  - Atualização e exclusão de livros.
+  - Consulta de todos os livros cadastrados.
 
-### **Projetos no Repositório** 📂
+- **📚 Gerenciamento de Categorias**:
+  - Cadastro de categorias de livros.
+  - Atualização e exclusão de categorias.
+  - Consulta de todas as categorias cadastradas.
 
-1. **📚 Sistema de Biblioteca**
-   - **Descrição**: Sistema de gerenciamento de livros, categorias e empréstimos. A API permite realizar operações **CRUD** para livros, categorias e empréstimos, além de permitir consultar quais livros estão disponíveis em uma categoria específica.
-   - **Tecnologias**: **FastAPI**, Python, **Uvicorn**, **Pydantic**
-   - **Objetivo**: Desenvolver uma API RESTful que gerencia livros e empréstimos em uma biblioteca, permitindo o cadastro, atualização, exclusão e consulta de livros e categorias, bem como o registro de empréstimos para os alunos.
-   - **Recursos**:
-     - Gerenciamento de **Livros** (Cadastro, Atualização, Exclusão, Listagem)
-     - Gerenciamento de **Categorias** de livros
-     - **Empréstimos** (Cadastrar, Atualizar, Excluir, Consultar)
-     - Consulta de livros por **categoria**
-     - **Testes** realizados via **Postman** e documentação gerada automaticamente pelo **FastAPI**.
+- **🔑 Empréstimos**:
+  - Realização de empréstimos de livros para alunos.
+  - Consulta de todos os empréstimos realizados.
+  - Atualização de empréstimos (como data de devolução).
+  - Exclusão de empréstimos.
+
+- **🔍 Consultas**:
+  - Consulta dos livros disponíveis em uma determinada categoria.
 
 ---
 
-### **Como Acessar o Projeto** 🔍
+## **Requisitos Técnicos** 🛠️
 
-O código-fonte e a documentação do **Sistema de Biblioteca** estão localizados na pasta **`biblioteca`**. Para acessar, basta navegar até o diretório do projeto no repositório e seguir as instruções de instalação e execução fornecidas na documentação.
+- **Python 3.7+**: A aplicação foi desenvolvida utilizando Python 3.7 ou superior.
+- **FastAPI**: Framework para construção de APIs.
+- **Uvicorn**: Servidor ASGI para rodar a aplicação.
+- **Pydantic**: Para validação e serialização dos dados.
+- **Postman**: Para testes da API.
 
+---
 
-Este repositório é destinado a todos que desejam acompanhar o progresso de **Programação Web I**, seja para estudo pessoal, análise de código ou contribuição.
+## **Instalação e Execução** 🚀
 
+### **Passo 1: Clonar o Repositório** 🔄
+
+Clone o repositório para o seu computador:
+
+```bash
+git clone https://github.com/seu-usuario/biblioteca-api.git
+cd biblioteca-api
