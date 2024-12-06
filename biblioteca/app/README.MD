@@ -52,6 +52,7 @@ Clone o repositório para o seu computador:
 ```bash
 git clone https://github.com/seu-usuario/biblioteca-api.git
 cd biblioteca-api
+<<<<<<< HEAD
 
 ### Passo 2: Criar e Ativar o Ambiente Virtual 🧑‍💻
 Crie um ambiente virtual para o projeto e ative-o:
@@ -206,3 +207,5 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 Agradecemos pela contribuição! Se você tiver mais perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
 
 
+=======
+>>>>>>> ad6925302739d6b257ea62d39e79164dae3a9bb1
