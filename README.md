@@ -1,6 +1,6 @@
 # **Repositório de Atividades - Programação Web I** 📂💻
 
-Este repositório contém as atividades desenvolvidas ao longo da disciplina **Programação Web I**. O objetivo principal deste repositório é documentar e armazenar os projetos, exercícios e experimentos realizados durante a disciplina, abordando temas essenciais para o desenvolvimento de aplicações web, como **HTML**, **CSS**, **JavaScript**, **APIs**, **Frameworks**, e **banco de dados**.
+Este repositório contém as atividades desenvolvidas ao longo da disciplina **Programação Web I**. O objetivo principal deste repositório é documentar e armazenar os projetos, exercícios e experimentos realizados durante a disciplina, abordando temas essenciais para o desenvolvimento de aplicações web, como **JavaScript**, **APIs**, **Frameworks**, e **banco de dados**.
 
 Cada pasta ou arquivo dentro deste repositório representa uma tarefa ou projeto específico, que visa desenvolver habilidades práticas em **desenvolvimento web** e na construção de **sistemas dinâmicos**. Os projetos variam de simples páginas estáticas a aplicações interativas e sistemas back-end, utilizando as melhores práticas e ferramentas do mercado.
 
