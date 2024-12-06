@@ -45,7 +45,6 @@ Este sistema foi desenvolvido para resolver o problema de gerenciamento de livro
 
 ## **Instalação e Execução** 🚀
 
-
 ### **Passo 1: Clonar o Repositório** 🔄
 
 Clone o repositório para o seu computador:
@@ -54,26 +53,31 @@ Clone o repositório para o seu computador:
 git clone https://github.com/seu-usuario/biblioteca-api.git
 cd biblioteca-api
 ```
+
 ---
 
 ### Passo 2: Criar e Ativar o Ambiente Virtual 🧑‍💻
+
 Crie um ambiente virtual para o projeto e ative-o:
 
 ```bash
 python -m venv venv  # Criação do ambiente virtual
 ```
 
-### Windows:
+### Windows
+
 ```bash
 .\venv\Scripts\activate
 ```
 
-### Linux/macOS:
+### Linux/macOS
+
 ```bash
 source venv/bin/activate
 ```
 
 ### Passo 3: Instalar Dependências 📦
+
 Instale as dependências necessárias com o pip:
 
 ```bash
@@ -81,6 +85,7 @@ pip install -r requirements.txt
 ```
 
 ### Passo 4: Rodar o Servidor ⚡
+
 Inicie o servidor com o Uvicorn:
 
 ```bash
@@ -88,6 +93,7 @@ uvicorn app.main:app --reload
 ```
 
 ### Passo 5: Documentação Interativa 📑
+
 Acesse a documentação interativa da API gerada automaticamente pelo FastAPI no seguinte link:
 
 ```bash
@@ -95,6 +101,7 @@ Acesse a documentação interativa da API gerada automaticamente pelo FastAPI no
 ```
 
 ### Testando a API no Postman 📬
+
 A API foi documentada usando o Postman. Para importar a coleção de testes, siga os passos abaixo:
 
 1. Abra o Postman.
@@ -115,7 +122,8 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 - **GET /livros**: Retorna todos os livros cadastrados.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
     Método: GET
     URL: http://127.0.0.1:8000/livros
@@ -123,8 +131,10 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 - **POST /livros**: Cria um novo livro.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
+
     Método: POST
     URL: http://127.0.0.1:8000/livros
     Corpo:
@@ -142,16 +152,20 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 - **GET /categorias**: Retorna todas as categorias cadastradas.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
+
     Método: GET
     URL: http://127.0.0.1:8000/categorias
     ```
 
 - **POST /categorias**: Cria uma nova categoria.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
+
     Método: POST
     URL: http://127.0.0.1:8000/categorias
     Corpo:
@@ -166,16 +180,20 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 - **GET /emprestimos**: Retorna todos os empréstimos cadastrados.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
+
     Método: GET
     URL: http://127.0.0.1:8000/emprestimos
     ```
 
 - **POST /emprestimos**: Realiza um novo empréstimo.
 
-    **Exemplo de Requisição**:
+    **Exemplo de Requisição**
+
     ```bash
+
     Método: POST
     URL: http://127.0.0.1:8000/emprestimos
     Corpo:
@@ -191,22 +209,23 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 1. Fork o repositório para o seu GitHub.
 2. Crie um branch para a sua feature:
+
     ```bash
     git checkout -b minha-feature
     ```
+
 3. Faça suas alterações, commit e push:
+
     ```bash
     git add .
     git commit -m "Descrição da minha feature"
     git push origin minha-feature
     ```
+
 4. Abra um **Pull Request** no repositório principal.
 
 ---
 
-
 ### Agradecimentos 🙏
 
 Agradecemos pela contribuição! Se você tiver mais perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
-
-
