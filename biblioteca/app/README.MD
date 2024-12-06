@@ -45,6 +45,7 @@ Este sistema foi desenvolvido para resolver o problema de gerenciamento de livro
 
 ## **Instalação e Execução** 🚀
 
+
 ### **Passo 1: Clonar o Repositório** 🔄
 
 Clone o repositório para o seu computador:
@@ -52,44 +53,46 @@ Clone o repositório para o seu computador:
 ```bash
 git clone https://github.com/seu-usuario/biblioteca-api.git
 cd biblioteca-api
-<<<<<<< HEAD
+```
+---
 
 ### Passo 2: Criar e Ativar o Ambiente Virtual 🧑‍💻
 Crie um ambiente virtual para o projeto e ative-o:
 
 ```bash
 python -m venv venv  # Criação do ambiente virtual
+```
 
-# Ativar o ambiente virtual:
-# Windows:
+### Windows:
+```bash
 .\venv\Scripts\activate
+```
+
+### Linux/macOS:
+```bash
+source venv/bin/activate
+```
 
 ### Passo 3: Instalar Dependências 📦
 Instale as dependências necessárias com o pip:
 
 ```bash
 pip install -r requirements.txt
-
-
-# Linux/macOS:
-source venv/bin/activate
+```
 
 ### Passo 4: Rodar o Servidor ⚡
 Inicie o servidor com o Uvicorn:
 
 ```bash
 uvicorn app.main:app --reload
+```
 
 ### Passo 5: Documentação Interativa 📑
 Acesse a documentação interativa da API gerada automaticamente pelo FastAPI no seguinte link:
 
+```bash
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
-O FastAPI gera automaticamente uma documentação interativa e fácil de usar, onde você pode testar diretamente as rotas da API. Essa documentação ajuda a entender como interagir com os endpoints da API sem a necessidade de outras ferramentas.
-
-Além disso, também está disponível uma versão alternativa da documentação, mais voltada para a especificação da API, no seguinte link:
-
-[http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+```
 
 ### Testando a API no Postman 📬
 A API foi documentada usando o Postman. Para importar a coleção de testes, siga os passos abaixo:
@@ -207,5 +210,3 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 Agradecemos pela contribuição! Se você tiver mais perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
 
 
-=======
->>>>>>> ad6925302739d6b257ea62d39e79164dae3a9bb1
