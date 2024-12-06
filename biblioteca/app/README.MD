@@ -226,6 +226,6 @@ Aqui estão alguns exemplos de rotas que você pode testar na API:
 
 ---
 
-### Agradecimentos 🙏
+### Agradecimentos 
 
-Agradecemos pela contribuição! Se você tiver mais perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
+Agradecemos pela contribuição! Se você tiver  perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
