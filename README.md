@@ -1,231 +1,133 @@
 # **Sistema de Biblioteca API** 📚
 
-## **Descrição** 📝
-
-O **Sistema de Biblioteca API** é uma aplicação web desenvolvida com **FastAPI** para gerenciar livros, categorias e empréstimos em uma biblioteca. A API oferece operações para realizar o cadastro, atualização, exclusão e consulta de livros, categorias e empréstimos, além de permitir consultar quais livros estão disponíveis em determinada categoria.
-
-### **Problema que resolve** 💡
-
-Este sistema foi desenvolvido para resolver o problema de gerenciamento de livros e empréstimos em bibliotecas. Ele permite que bibliotecas mantenham o controle sobre os livros disponíveis, as categorias de livros e os empréstimos realizados pelos alunos. O sistema facilita a consulta e atualização de dados, além de garantir que os livros não sejam emprestados mais de uma vez simultaneamente.
+Este é um sistema simples desenvolvido com **FastAPI** que oferece operações CRUD para gerenciar Livros, Categorias e Empréstimos em uma biblioteca. O backend utiliza FastAPI, SQLite como banco de dados, e SQLAlchemy para ORM.
 
 ---
 
-## **Funcionalidades** ⚙️
+## **Tecnologias Utilizadas**
 
-- **📖 Gerenciamento de Livros**:
-  - Cadastro de livros com título, autor, ISBN e categoria.
-  - Atualização e exclusão de livros.
-  - Consulta de todos os livros cadastrados.
-
-- **📚 Gerenciamento de Categorias**:
-  - Cadastro de categorias de livros.
-  - Atualização e exclusão de categorias.
-  - Consulta de todas as categorias cadastradas.
-
-- **🔑 Empréstimos**:
-  - Realização de empréstimos de livros para alunos.
-  - Consulta de todos os empréstimos realizados.
-  - Atualização de empréstimos (como data de devolução).
-  - Exclusão de empréstimos.
-
-- **🔍 Consultas**:
-  - Consulta dos livros disponíveis em uma determinada categoria.
+- **Python 3.7+**
+- **FastAPI**: Framework para criação de APIs rápidas e eficientes.
+- **SQLAlchemy**: ORM para gerenciar interações com o banco de dados.
+- **SQLite**: Banco de dados leve para persistência de dados.
 
 ---
 
-## **Requisitos Técnicos** 🛠️
+## **Pré-requisitos**
 
-- **Python 3.7+**: A aplicação foi desenvolvida utilizando Python 3.7 ou superior.
-- **FastAPI**: Framework para construção de APIs.
-- **Uvicorn**: Servidor ASGI para rodar a aplicação.
-- **Pydantic**: Para validação e serialização dos dados.
-- **Postman**: Para testes da API.
+1. **Python 3.7+** instalado.
+2. Gerenciador de pacotes `pip`.
 
 ---
 
-## **Instalação e Execução** 🚀
+## **Instalação**
 
-### **Passo 1: Clonar o Repositório** 🔄
+1. **Clone o repositório:**
 
-Clone o repositório para o seu computador:
+   ```bash
+   git clone <url-do-repositorio>
+   cd <nome-do-diretorio>
+   ```
 
-```bash
-git clone https://github.com/seu-usuario/biblioteca-api.git
-cd biblioteca-api
-```
+2. **Crie e ative um ambiente virtual:**
 
----
+   No Linux/macOS:
 
-### Passo 2: Criar e Ativar o Ambiente Virtual 🧑‍💻
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
 
-Crie um ambiente virtual para o projeto e ative-o:
+   No Windows:
 
-```bash
-python -m venv venv  # Criação do ambiente virtual
-```
+   ```cmd
+   python -m venv venv
+   venv\Scripts\activate
+   ```
 
-### Windows
+3. **Instale as dependências:**
 
-```bash
-.\venv\Scripts\activate
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Linux/macOS
-
-```bash
-source venv/bin/activate
-```
-
-### Passo 3: Instalar Dependências 📦
-
-Instale as dependências necessárias com o pip:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Passo 4: Rodar o Servidor ⚡
-
-Inicie o servidor com o Uvicorn:
-
-```bash
-uvicorn app.main:app --reload
-```
-
-### Passo 5: Documentação Interativa 📑
-
-Acesse a documentação interativa da API gerada automaticamente pelo FastAPI no seguinte link:
-
-```bash
-[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-```
-
-### Testando a API no Postman 📬
-
-A API foi documentada usando o Postman. Para importar a coleção de testes, siga os passos abaixo:
-
-1. Abra o Postman.
-2. Importe a coleção de testes fornecida:
-   - Clique em **File** > **Import**.
-3. Selecione o arquivo da **Postman Collection** exportado ou baixe o arquivo da coleção se estiver fornecido no repositório.
-4. Teste as rotas usando as requisições pré-configuradas no Postman.
-
-Isso permitirá que você interaja com a API de maneira prática, testando as rotas de acordo com os exemplos fornecidos.
-
-### Exemplos de Rotas 🌐
-
-Aqui estão alguns exemplos de rotas que você pode testar na API:
+4. **Crie o banco de dados SQLite:**
+   O banco de dados será criado automaticamente ao executar o código, com base nos modelos definidos.
 
 ---
 
-#### Livros 📖
+## **Executando a API**
 
-- **GET /livros**: Retorna todos os livros cadastrados.
+1. Crie o arquivo .env com as seguintes variáveis e introduza as informações:
 
-    **Exemplo de Requisição**
+   ```bash
+   DATABASE_PORT=
+   POSTGRES_PASSWORD=
+   POSTGRES_USER=
+   POSTGRES_DB=fastapi
+   POSTGRES_HOST=
+   POSTGRES_HOSTNAME=
+   ```
 
-    ```bash
-    Método: GET
-    URL: http://127.0.0.1:8000/livros
-    ```
+2. Inicie o servidor:
 
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+3. Acesse a documentação interativa no navegador:
+   - Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+   - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+---
+
+## **Endpoints**
+
+### Livros 📖
+
+- **GET /livros**: Lista todos os livros.
 - **POST /livros**: Cria um novo livro.
+- **PUT /livros/{livro_id}**: Atualiza um livro existente.
+- **DELETE /livros/{livro_id}**: Deleta um livro.
 
-    **Exemplo de Requisição**
+### Categorias 📚
 
-    ```bash
-
-    Método: POST
-    URL: http://127.0.0.1:8000/livros
-    Corpo:
-    {
-        "titulo": "O Senhor dos Anéis",
-        "autor": "J.R.R. Tolkien",
-        "isbn": "978-0261102385",
-        "categoria_id": 1
-    }
-    ```
-
----
-
-#### Categorias 📚
-
-- **GET /categorias**: Retorna todas as categorias cadastradas.
-
-    **Exemplo de Requisição**
-
-    ```bash
-
-    Método: GET
-    URL: http://127.0.0.1:8000/categorias
-    ```
-
+- **GET /categorias**: Lista todas as categorias.
 - **POST /categorias**: Cria uma nova categoria.
+- **PUT /categorias/{categoria_id}**: Atualiza uma categoria existente.
+- **DELETE /categorias/{categoria_id}**: Deleta uma categoria.
 
-    **Exemplo de Requisição**
+### Empréstimos 🔑
 
-    ```bash
-
-    Método: POST
-    URL: http://127.0.0.1:8000/categorias
-    Corpo:
-    {
-        "nome": "Ficção"
-    }
-    ```
-
----
-
-#### Empréstimos 🔑
-
-- **GET /emprestimos**: Retorna todos os empréstimos cadastrados.
-
-    **Exemplo de Requisição**
-
-    ```bash
-
-    Método: GET
-    URL: http://127.0.0.1:8000/emprestimos
-    ```
-
+- **GET /emprestimos**: Lista todos os empréstimos.
 - **POST /emprestimos**: Realiza um novo empréstimo.
-
-    **Exemplo de Requisição**
-
-    ```bash
-
-    Método: POST
-    URL: http://127.0.0.1:8000/emprestimos
-    Corpo:
-    {
-        "livro_id": 1,
-        "aluno": "João Silva",
-        "data_emprestimo": "2024-12-01",
-        "data_devolucao": null
-    }
-    ```
-
-### Como Contribuir 🤝
-
-1. Fork o repositório para o seu GitHub.
-2. Crie um branch para a sua feature:
-
-    ```bash
-    git checkout -b minha-feature
-    ```
-
-3. Faça suas alterações, commit e push:
-
-    ```bash
-    git add .
-    git commit -m "Descrição da minha feature"
-    git push origin minha-feature
-    ```
-
-4. Abra um **Pull Request** no repositório principal.
+- **PUT /emprestimos/{emprestimo_id}**: Atualiza um empréstimo existente.
+- **DELETE /emprestimos/{emprestimo_id}**: Deleta um empréstimo.
 
 ---
 
-### Agradecimentos 
+## **Modelos de Dados**
 
-Agradecemos pela contribuição! Se você tiver  perguntas ou sugestões de melhorias, sinta-se à vontade para abrir um **issue** ou enviar um **pull request**.
+### Livro
+
+- **titulo**: String
+- **autor**: String
+- **isbn**: String
+- **categoria_id**: Inteiro (referência a `Categoria`)
+
+### Categoria
+
+- **nome**: String
+
+### Empréstimo
+
+- **livro_id**: Inteiro (referência a `Livro`)
+- **aluno**: String
+- **data_emprestimo**: String
+- **data_devolucao**: String
+
+---
+
+### **Requisições**
+
+- Para testar as requisições do projeto utilize o **Postman** e abra o arquivo **Biblioteca.postman_collection.json**.
